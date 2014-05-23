@@ -16,24 +16,24 @@ def roll():
     DiceRoll = random.randint(1,6)
 
 
-def show_dice():
-    if DiceRoll == 1:
+def show_dice(roll):
+    if roll == 1:
         print(s1)
-    elif DiceRoll == 2:
+    elif roll == 2:
         print(s2)
-    elif DiceRoll == 3:
+    elif roll == 3:
         print(s3)
-    elif DiceRoll == 4:
+    elif roll == 4:
         print(s4)
-    elif DiceRoll == 5:
+    elif roll == 5:
         print(s5)
-    elif DiceRoll == 6:
+    elif roll == 6:
         print(s6)
         
         
 
-while DiceRoll !=6:
+while roll !=6:
     input(":")
     roll()
     time.sleep(1)
-    show_dice()
+    show_dice(DiceRoll)
